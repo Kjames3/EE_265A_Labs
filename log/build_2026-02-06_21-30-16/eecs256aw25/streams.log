@@ -1,0 +1,31 @@
+[0.374s] Invoking command in '/home/kjames/ros2_ws/build/eecs256aw25': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kjames/ros2_ws/build/eecs256aw25/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kjames/ros2_ws/build/eecs256aw25/build --no-deps symlink_data
+[0.540s] running develop
+[0.654s] running egg_info
+[0.654s] creating eecs256aw25.egg-info
+[0.663s] writing eecs256aw25.egg-info/PKG-INFO
+[0.663s] writing dependency_links to eecs256aw25.egg-info/dependency_links.txt
+[0.663s] writing entry points to eecs256aw25.egg-info/entry_points.txt
+[0.663s] writing requirements to eecs256aw25.egg-info/requires.txt
+[0.663s] writing top-level names to eecs256aw25.egg-info/top_level.txt
+[0.663s] writing manifest file 'eecs256aw25.egg-info/SOURCES.txt'
+[0.681s] reading manifest file 'eecs256aw25.egg-info/SOURCES.txt'
+[0.682s] writing manifest file 'eecs256aw25.egg-info/SOURCES.txt'
+[0.691s] running build_ext
+[0.691s] Creating /home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25.egg-link (link to .)
+[0.691s] Installing closed_loop script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.692s] Installing listener script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.692s] Installing open_loop script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.692s] Installing talker script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.692s] 
+[0.692s] Installed /home/kjames/ros2_ws/build/eecs256aw25
+[0.692s] running symlink_data
+[0.692s] creating /home/kjames/ros2_ws/install/eecs256aw25/share/ament_index
+[0.692s] creating /home/kjames/ros2_ws/install/eecs256aw25/share/ament_index/resource_index
+[0.692s] creating /home/kjames/ros2_ws/install/eecs256aw25/share/ament_index/resource_index/packages
+[0.692s] symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/resource/eecs256aw25 -> /home/kjames/ros2_ws/install/eecs256aw25/share/ament_index/resource_index/packages
+[0.692s] symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/package.xml -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25
+[0.692s] creating /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+[0.692s] symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/launch/closed_loop.launch.py -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+[0.692s] symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/launch/lab3_turtlebot4_spawn.launch.py -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+[0.692s] symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/launch/lab3_gz.launch.py -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+[0.707s] Invoked command in '/home/kjames/ros2_ws/build/eecs256aw25' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kjames/ros2_ws/build/eecs256aw25/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kjames/ros2_ws/build/eecs256aw25/build --no-deps symlink_data

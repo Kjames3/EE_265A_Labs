@@ -1,0 +1,5 @@
+  File "/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25/test_a_star.py", line 78
+    if __name__ == "__main__":-
+                               ^
+SyntaxError: invalid syntax
+

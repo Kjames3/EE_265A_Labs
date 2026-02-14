@@ -1,0 +1,10 @@
+  File "/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25/orient_a_star.py", line 13
+    x, y, theta =
+                 ^
+SyntaxError: invalid syntax
+
+  File "/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25/test_a_star.py", line 94
+    all_rows = [p[0] for p in obstacles] + [s[0] for s in closed_positions] + \\
+                                                                               ^
+SyntaxError: unexpected character after line continuation character
+

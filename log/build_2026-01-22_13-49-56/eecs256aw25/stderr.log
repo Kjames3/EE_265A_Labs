@@ -1,0 +1,5 @@
+  File "/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25/open_loop.py", line 75
+    ]
+    ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' on line 74
+

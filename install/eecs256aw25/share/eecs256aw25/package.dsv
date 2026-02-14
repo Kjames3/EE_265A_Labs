@@ -1,0 +1,6 @@
+source;share/eecs256aw25/hook/pythonpath.ps1
+source;share/eecs256aw25/hook/pythonpath.dsv
+source;share/eecs256aw25/hook/pythonpath.sh
+source;share/eecs256aw25/hook/ament_prefix_path.ps1
+source;share/eecs256aw25/hook/ament_prefix_path.dsv
+source;share/eecs256aw25/hook/ament_prefix_path.sh

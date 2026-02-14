@@ -1,0 +1,26 @@
+[0.348s] Invoking command in '/home/kjames/ros2_ws/src/eecs256aw25': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kjames/ros2_ws/build/eecs256aw25/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eecs256aw25 build --build-base /home/kjames/ros2_ws/build/eecs256aw25/build install --record /home/kjames/ros2_ws/build/eecs256aw25/install.log --single-version-externally-managed install_data
+[0.470s] running egg_info
+[0.477s] writing ../../build/eecs256aw25/eecs256aw25.egg-info/PKG-INFO
+[0.478s] writing dependency_links to ../../build/eecs256aw25/eecs256aw25.egg-info/dependency_links.txt
+[0.478s] writing entry points to ../../build/eecs256aw25/eecs256aw25.egg-info/entry_points.txt
+[0.478s] writing requirements to ../../build/eecs256aw25/eecs256aw25.egg-info/requires.txt
+[0.478s] writing top-level names to ../../build/eecs256aw25/eecs256aw25.egg-info/top_level.txt
+[0.494s] reading manifest file '../../build/eecs256aw25/eecs256aw25.egg-info/SOURCES.txt'
+[0.494s] writing manifest file '../../build/eecs256aw25/eecs256aw25.egg-info/SOURCES.txt'
+[0.494s] running build
+[0.494s] running build_py
+[0.494s] copying eecs256aw25/open_loop.py -> /home/kjames/ros2_ws/build/eecs256aw25/build/lib/eecs256aw25
+[0.494s] running install
+[0.498s] running install_lib
+[0.506s] copying /home/kjames/ros2_ws/build/eecs256aw25/build/lib/eecs256aw25/open_loop.py -> /home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25
+[0.506s] byte-compiling /home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25/open_loop.py to open_loop.cpython-312.pyc
+[0.507s] running install_data
+[0.507s] running install_egg_info
+[0.517s] removing '/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25-0.0.0-py3.12.egg-info' (and everything under it)
+[0.517s] Copying ../../build/eecs256aw25/eecs256aw25.egg-info to /home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25-0.0.0-py3.12.egg-info
+[0.517s] running install_scripts
+[0.577s] Installing listener script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.577s] Installing open_loop script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.577s] Installing talker script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+[0.577s] writing list of installed files to '/home/kjames/ros2_ws/build/eecs256aw25/install.log'
+[0.592s] Invoked command in '/home/kjames/ros2_ws/src/eecs256aw25' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/kjames/ros2_ws/build/eecs256aw25/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eecs256aw25 build --build-base /home/kjames/ros2_ws/build/eecs256aw25/build install --record /home/kjames/ros2_ws/build/eecs256aw25/install.log --single-version-externally-managed install_data
