@@ -1,0 +1,23 @@
+running develop
+running egg_info
+writing eecs256aw25.egg-info/PKG-INFO
+writing dependency_links to eecs256aw25.egg-info/dependency_links.txt
+writing entry points to eecs256aw25.egg-info/entry_points.txt
+writing requirements to eecs256aw25.egg-info/requires.txt
+writing top-level names to eecs256aw25.egg-info/top_level.txt
+reading manifest file 'eecs256aw25.egg-info/SOURCES.txt'
+writing manifest file 'eecs256aw25.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kjames/ros2_ws/install/eecs256aw25/lib/python3.12/site-packages/eecs256aw25.egg-link (link to .)
+Installing closed_loop script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+Installing listener script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+Installing open_loop script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+Installing talker script to /home/kjames/ros2_ws/install/eecs256aw25/lib/eecs256aw25
+
+Installed /home/kjames/ros2_ws/build/eecs256aw25
+running symlink_data
+symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/resource/eecs256aw25 -> /home/kjames/ros2_ws/install/eecs256aw25/share/ament_index/resource_index/packages
+symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/package.xml -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25
+symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/launch/closed_loop.launch.py -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+symbolically linking /home/kjames/ros2_ws/build/eecs256aw25/launch/lab3_turtlebot4_spawn.launch.py -> /home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch
+error: [Errno 2] No such file or directory: '/home/kjames/ros2_ws/install/eecs256aw25/share/eecs256aw25/launch/spawn_husky_ur.launch.py'
