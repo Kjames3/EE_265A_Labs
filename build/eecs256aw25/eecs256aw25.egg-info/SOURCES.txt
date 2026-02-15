@@ -23,6 +23,7 @@ launch/lab3_gz.launch.py
 launch/lab3_turtlebot4_spawn.launch.py
 launch/spawn_husky_ur.launch.py
 models/.gitkeep
+models/husky_ur_control.yaml
 models/husky_ur_extras.urdf.xacro
 models/husky_control/CHANGELOG.rst
 models/husky_control/CMakeLists.txt
@@ -355,6 +356,7 @@ models/ur_description/test/test_ur_urdf_xacro.py
 models/ur_description/test/test_view_ur_launch.py
 models/ur_description/urdf/ros2_control_mock_hardware.xacro
 models/ur_description/urdf/ur.urdf.xacro
+models/ur_description/urdf/ur_gz.ros2_control.xacro
 models/ur_description/urdf/ur_macro.xacro
 models/ur_description/urdf/ur_mocked.urdf.xacro
 models/ur_description/urdf/inc/ur_common.xacro

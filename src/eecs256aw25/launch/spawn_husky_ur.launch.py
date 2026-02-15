@@ -42,13 +42,17 @@ def generate_launch_description():
         ' ',
         'name:=husky',
         ' ',
-        'prefix:='
+        'prefix:=',
+        ' ',
+        'gazebo_controllers:=', PathJoinSubstitution([install_dir, 'models', 'husky_ur_control.yaml']),
+        ' ',
+        'is_sim:=true',
     ])
     
     robot_description = {'robot_description': robot_description_content}
 
     # Gazebo Sim
-    gazebo = IncludeLaunchDescription(
+    gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
@@ -56,7 +60,7 @@ def generate_launch_description():
     )
 
     # Robot State Publisher
-    robot_state_publisher = Node(
+    node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
@@ -64,19 +68,21 @@ def generate_launch_description():
     )
 
     # Spawn Entity
-    spawn = Node(
+    spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
         arguments=[
             '-name', 'husky',
             '-topic', 'robot_description',
-            '-z', '0.5'
+            '-z', '0.5',
+            '-J', 'ur_arm_shoulder_pan_joint', '0.0',
+            '-J', 'ur_arm_shoulder_lift_joint', '-1.57',
+            '-J', 'ur_arm_elbow_joint', '0.0'
         ],
         output='screen',
     )
     
-    # Bridge (Optional: for clock and basic transforms if needed, but RSP handles TF)
-    # Usually we need a bridge for /clock if we want identifying simulation time.
+    # Bridge
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -84,9 +90,34 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Spawners
+    spawn_joint_state_broadcaster = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['joint_state_broadcaster', '--controller-manager', '/controller_manager'],
+        output='screen'
+    )
+
+    spawn_husky_velocity_controller = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['husky_velocity_controller', '--controller-manager', '/controller_manager'],
+        output='screen'
+    )
+
+    # spawn_ur_manipulator_controller = Node(
+    #     package='controller_manager',
+    #     executable='spawner',
+    #     arguments=['ur_manipulator_controller', '--controller-manager', '/controller_manager'],
+    #     output='screen'
+    # )
+
     return LaunchDescription([
-        gazebo,
-        robot_state_publisher,
-        spawn,
-        bridge
+        gz_sim,
+        node_robot_state_publisher,
+        spawn_entity,
+        bridge,
+        spawn_joint_state_broadcaster,
+        spawn_husky_velocity_controller,
+        # spawn_ur_manipulator_controller
     ])

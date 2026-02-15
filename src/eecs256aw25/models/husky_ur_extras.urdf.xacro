@@ -19,6 +19,11 @@
     physical_parameters_file="$(find eecs256aw25)/models/ur_description/config/ur5/physical_parameters.yaml"
     visual_parameters_file="$(find eecs256aw25)/models/ur_description/config/ur5/visual_parameters.yaml"
     >
-    <origin xyz="$(arg arm_xyz)" rpy="$(arg arm_rpy)"/>
+    <origin xyz="-0.105 0.0 0.0" rpy="0 0 0"/>
   </xacro:ur_robot>
+
+  <!-- Include UR ros2_control macro -->
+  <xacro:include filename="$(find eecs256aw25)/models/ur_description/urdf/ur_gz.ros2_control.xacro"/>
+  <!-- Instantiate the UR ros2_control macro -->
+  <xacro:ur_ros2_control name="ur" prefix="ur_arm_"/>
 </robot>
