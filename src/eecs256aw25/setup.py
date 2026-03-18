@@ -45,6 +45,8 @@ setup(
             'listener = eecs256aw25.subscriber:subscriber_entry_point_function',
             'open_loop = eecs256aw25.open_loop:open_loop_entry_point_function',
             'closed_loop = eecs256aw25.closed_loop:closed_loop_entry_point_function',
+            'gradient_descent = eecs256aw25.gradient_descent:gradient_descent_entry_point_function',
+            'polynomial_timescaling = eecs256aw25.polynomial_timescaling:polynomial_timescaling_entry_point_function',
         ],
     },
 )
