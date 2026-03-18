@@ -1,1 +1,5 @@
-/home/kjames/ros2_ws/build/eecs256aw25/models/husky_ur_description/scripts/setup_husky_dual_ur3_envar
+#!/usr/bin/env bash
+export HUSKY_TOP_PLATE_ENABLED=false
+export HUSKY_USER_RAIL_ENABLED=false
+
+export HUSKY_URDF_EXTRAS=$(catkin_find husky_ur_description urdf/husky_dual_ur3_description.urdf.xacro --first-only)

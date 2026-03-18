@@ -1,1 +1,7 @@
-/home/kjames/ros2_ws/build/eecs256aw25/models/ur_description/doc/migration_notes.rst
+Migration notes
+===============
+
+Iron -> Jazzy
+^^^^^^^^^^^^^
+.. include:: migration/jazzy.rst
+    :start-line: 4

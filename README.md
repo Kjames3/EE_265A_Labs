@@ -2,6 +2,10 @@
 
 This repository contains the scripts and implementations for the ROS2 TurtleBot labs.
 
+## Lab 0: Setup
+
+run `ros2 launch eecs256aw25 lab3_gz.launch.py model:=lite world:=empty` to start the simulation via ROS2 Gazebo Sim(harmonic).
+
 ## Lab 1: Introduction and Teleop
 This lab involved setting up the ROS2 Jazzy environment and verifying the TurtleBot 2D simulation. We ensured that the pre-installed environment worked correctly and that the robot could be controlled using teleoperation.
 

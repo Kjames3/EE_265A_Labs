@@ -1,1 +1,12 @@
-/home/kjames/ros2_ws/build/eecs256aw25/models/husky_control/CMakeLists.txt
+cmake_minimum_required(VERSION 3.5)
+project(husky_control)
+
+
+find_package(ament_cmake REQUIRED)
+
+
+install(DIRECTORY config launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

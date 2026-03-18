@@ -1,1 +1,5 @@
-/home/kjames/ros2_ws/build/eecs256aw25/models/husky_ur_description/scripts/setup_husky_ur5_envar
+#!/usr/bin/env bash
+export HUSKY_USER_RAIL_ENABLED=false
+export HUSKY_LARGE_TOP_PLATE=true
+
+export HUSKY_URDF_EXTRAS=$(catkin_find husky_ur_description urdf/husky_ur5_description.urdf.xacro --first-only)

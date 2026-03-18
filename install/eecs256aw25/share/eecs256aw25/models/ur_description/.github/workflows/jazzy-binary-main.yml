@@ -1,1 +1,19 @@
-/home/kjames/ros2_ws/build/eecs256aw25/models/ur_description/.github/workflows/jazzy-binary-main.yml
+name: Jazzy Binary Build Main
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - jazzy
+  push:
+    branches:
+      - jazzy
+  schedule:
+    - cron: '53 5 * * *'
+
+jobs:
+  jazzy_binary_main:
+    uses: ./.github/workflows/reusable_ici.yml
+    with:
+      ros_distro: jazzy
+      ros_repo: main
+      ref_for_scheduled_build: jazzy
